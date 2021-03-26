@@ -17,6 +17,12 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/hello-world.html'));
 });
 
+app.get('/charts/:fileName', function(req, res) {
+    console.log(req.params)
+    var file_name = req.params.fileName
+    res.sendFile(path.join(__dirname + '/multiclusterhub/charts/'+file_name));
+});
+
 app.get('/readiness', function(req, res) {
     res.sendStatus(200);
 });

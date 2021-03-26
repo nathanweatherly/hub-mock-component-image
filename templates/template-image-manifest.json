@@ -1,0 +1,37 @@
+[
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "IMAGE_REMOTE",
+        "image-digest": "sha256:HUB_MOCK_COMPONENT_IMAGE_SHA",
+        "image-key": "multicloud_manager"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "IMAGE_REMOTE",
+        "image-digest": "sha256:HUB_MOCK_COMPONENT_IMAGE_SHA",
+        "image-key": "work"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "IMAGE_REMOTE",
+        "image-digest": "sha256:HUB_MOCK_COMPONENT_IMAGE_SHA",
+        "image-key": "registration"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "IMAGE_REMOTE",
+        "image-digest": "sha256:HUB_MOCK_COMPONENT_IMAGE_SHA",
+        "image-key": "multiclusterhub_repo"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "IMAGE_REMOTE",
+        "image-digest": "sha256:HUB_MOCK_COMPONENT_IMAGE_SHA",
+        "image-key": "hub_mock_component_image"
+    }
+]

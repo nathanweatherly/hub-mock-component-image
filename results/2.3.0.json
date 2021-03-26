@@ -1,0 +1,37 @@
+[
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-digest": "sha256:3322cb14142d3a230914905da5858c8dc665975c930dd57dc5e5de29bf01bb73",
+        "image-key": "multicloud_manager"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-digest": "sha256:3322cb14142d3a230914905da5858c8dc665975c930dd57dc5e5de29bf01bb73",
+        "image-key": "work"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-digest": "sha256:3322cb14142d3a230914905da5858c8dc665975c930dd57dc5e5de29bf01bb73",
+        "image-key": "registration"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-digest": "sha256:3322cb14142d3a230914905da5858c8dc665975c930dd57dc5e5de29bf01bb73",
+        "image-key": "multiclusterhub_repo"
+    },
+    {
+        "image-name": "hub-mock-component-image",
+        "git-repository": "open-cluster-management/hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-digest": "sha256:3322cb14142d3a230914905da5858c8dc665975c930dd57dc5e5de29bf01bb73",
+        "image-key": "hub_mock_component_image"
+    }
+]

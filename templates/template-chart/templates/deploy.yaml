@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName }}
+  labels:
+    app: {{ .Values.appName }}
+spec:
+  selector:
+    matchLabels:
+        app: {{ .Values.appName }}
+  replicas: {{ .Values.hubconfig.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+    spec:
+      containers:
+      - name: hub-mock-component-container
+        image: {{ .Values.global.imageOverrides.hub_mock_component_image }}
+        ports:
+        - containerPort: 80
+      {{- with .Values.hubconfig.nodeSelector }}
+      nodeSelector:
+      {{ toYaml . | indent 8 }}
+      {{- end }}
+
