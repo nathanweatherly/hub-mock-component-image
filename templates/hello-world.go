@@ -15,7 +15,7 @@ func main() {
 	http.HandleFunc("/healthz", Ping)
 	http.HandleFunc("/readyz", Ping)
 	http.ListenAndServe(":8000", nil)
-	http.ListenAndServe(":6443", nil)
+	// http.ListenAndServe(":6443", nil) this doesn't work for proxyserver life/ready
 
 	for {
 		time.Sleep(5 * time.Second)

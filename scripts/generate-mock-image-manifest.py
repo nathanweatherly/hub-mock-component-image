@@ -3,7 +3,7 @@ import os
 
 _product_version="2.3.0"
 _image_remote="quay.io/nathanweatherly"
-_hub_mock_component_image_sha="3322cb14142d3a230914905da5858c8dc665975c930dd57dc5e5de29bf01bb73"
+_hub_mock_component_image_sha="8e946a8f0f162c3285f46fa293ce774de2a70bbd48ff8107a8f0c6535d9a0b49"
 
 _git_repo_base_dir = os.getcwd() # base repo directory
 _templates_dir = os.path.join(_git_repo_base_dir, "templates")
