@@ -8,6 +8,7 @@ const fs = require('fs');
 // Constants
 const PORT = 3000;
 const HOST = '0.0.0.0';
+const TIMEOUT = 2000;
 
 // App
 const app = express();
@@ -23,12 +24,22 @@ app.get('/charts/:fileName', function(req, res) {
     res.sendFile(path.join(__dirname + '/multiclusterhub/charts/'+file_name));
 });
 
+// promises worked locally, but not on cluster
+
 app.get('/readiness', function(req, res) {
-    res.sendStatus(200);
+    // return new Promise ( (resolve) => {
+    //     setTimeout(() => resolve(), TIMEOUT)
+    // }).then( () => {
+        res.sendStatus(200);
+    // })
 });
 
 app.get('/liveness', function(req, res) {
-    res.sendStatus(200);
+    // return new Promise ( (resolve) => {
+    //     setTimeout(() => resolve(), TIMEOUT)
+    // }).then( () => {
+        res.sendStatus(200);
+    // })
 });
 
 app.listen(PORT, HOST);
