@@ -1,13 +1,11 @@
 import shutil
+from check_env_vars import _product_version
 import os
 
 # make sure helm installed
 if shutil.which("helm") is None:
     # todo install helm if doesn't exist?
     raise Exception("Helm not installed! Go install Helm 3 CLI!")
-
-# all the env vars
-_chart_version="2.3.0"
 
 _git_repo_base_dir = os.getcwd() # base repo directory
 _templates_dir = os.path.join(_git_repo_base_dir, "templates")
@@ -32,7 +30,7 @@ for _cn in _chart_names:
     with open(_chart_yaml) as f:
         _chart_yaml_text=f.read()
         _chart_yaml_text= _chart_yaml_text.replace('CHARTNAME', _cn)
-        _chart_yaml_text= _chart_yaml_text.replace('CHARTVERSION', _chart_version )
+        _chart_yaml_text= _chart_yaml_text.replace('CHARTVERSION', _product_version )
     with open(_chart_yaml, "w") as f:
         f.write(_chart_yaml_text)
 
@@ -45,7 +43,7 @@ for _cn in _chart_names:
 
 
     os.system('helm package {}'.format(_new_chart_path))
-    os.system('mv {}-{}.tgz {}'.format(_cn, _chart_version, _mch_repo_charts_dir))
+    os.system('mv {}-{}.tgz {}'.format(_cn, _product_version, _mch_repo_charts_dir))
     if os.path.isdir(_new_chart_path):
         shutil.rmtree(_new_chart_path)
 
