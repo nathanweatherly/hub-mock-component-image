@@ -5,10 +5,6 @@ from check_env_vars import _product_version, _image_remote, _image_name, _image_
 
 _full_image = "{}/{}:{}".format(_image_remote, _image_remote, _image_tag)
 
-# _image_sha = os.environ.get('MOCK_IMAGE_SHA')
-# if not _image_sha:
-#     raise Exception("You must export MOCK_IMAGE_SHA!")
-
 _image_keys = ["multicloud_manager", "work", "registration", "multiclusterhub_repo", "hub_mock_component_image"]
 
 _git_repo_base_dir = os.getcwd() # base repo directory

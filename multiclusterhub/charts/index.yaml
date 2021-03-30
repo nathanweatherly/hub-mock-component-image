@@ -1,0 +1,103 @@
+apiVersion: v1
+entries:
+  application-chart:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.229279-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 7c0b907b98bbac817ab47c2a5a812e4b8526461f981566c27ef84595ac413a65
+    name: application-chart
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/application-chart-2.3.0.tgz
+    version: 2.3.0
+  cert-manager:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.231079-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 8c11fcec21de2bda228567c5c16045174cff0f2fdb89e41ba96d0b2faed6102c
+    name: cert-manager
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/cert-manager-2.3.0.tgz
+    version: 2.3.0
+  cert-manager-webhook:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.231512-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 8ef80ffc72b07689b24524c2de0916b509f09315e36f16303d6d863024936ece
+    name: cert-manager-webhook
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/cert-manager-webhook-2.3.0.tgz
+    version: 2.3.0
+  cluster-lifecycle:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.231922-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 33e9df5c8170ba25ead22eb66163d7738083f092465983639d662580861099ca
+    name: cluster-lifecycle
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/cluster-lifecycle-2.3.0.tgz
+    version: 2.3.0
+  configmap-watcher:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.233678-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: fad9b7c0e74f3df66b32af47f0faf64a337f1ca6da16984394656ee6185b9559
+    name: configmap-watcher
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/configmap-watcher-2.3.0.tgz
+    version: 2.3.0
+  console-chart:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.234103-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: c9e4beca2133616d17b6b19d509915d28c779167c001e01ca993c62b54b651cb
+    name: console-chart
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/console-chart-2.3.0.tgz
+    version: 2.3.0
+  grc:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.234527-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 9abf7caacc4ff934bbd060eb2ad40256182359528e270f89e55b3637380191da
+    name: grc
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/grc-2.3.0.tgz
+    version: 2.3.0
+  kui-web-terminal:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.234896-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: b4ee8dbadbc6b1812eded07e3f146e7f8421709f8707e064274132c62af3ab38
+    name: kui-web-terminal
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/kui-web-terminal-2.3.0.tgz
+    version: 2.3.0
+  management-ingress:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.235286-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 218d04341a842b389fc840765bf5b1a611d8903d4b699e7d40ecdd84c57a6fda
+    name: management-ingress
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/management-ingress-2.3.0.tgz
+    version: 2.3.0
+  search-prod:
+  - apiVersion: v1
+    created: "2021-03-29T22:36:20.235642-04:00"
+    description: This chart is a placeholder chart for testing the MultiClusterHub
+      Operator
+    digest: 8a4c1c22f0203148b0e395449319b8c8a686e55e009c5472b9610865b5191740
+    name: search-prod
+    urls:
+    - http://multiclusterhub-repo.open-cluster-management.svc.cluster.local:3000/charts/search-prod-2.3.0.tgz
+    version: 2.3.0
+generated: "2021-03-29T22:36:20.227303-04:00"

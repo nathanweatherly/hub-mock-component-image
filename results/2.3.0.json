@@ -1,0 +1,32 @@
+[
+    {
+        "image-key": "multicloud_manager",
+        "image-name": "hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-tag": "mock"
+    },
+    {
+        "image-key": "work",
+        "image-name": "hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-tag": "mock"
+    },
+    {
+        "image-key": "registration",
+        "image-name": "hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-tag": "mock"
+    },
+    {
+        "image-key": "multiclusterhub_repo",
+        "image-name": "hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-tag": "mock"
+    },
+    {
+        "image-key": "hub_mock_component_image",
+        "image-name": "hub-mock-component-image",
+        "image-remote": "quay.io/nathanweatherly",
+        "image-tag": "mock"
+    }
+]
