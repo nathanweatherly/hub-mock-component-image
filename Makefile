@@ -23,7 +23,7 @@ del-mock-image-manifests:
 	rm -rf results
 
 del-mock-bins:
-	rm -rf bin/*
+	rm -rf bin
 
 clean-up: 
 	make del-mock-chart-repo 
