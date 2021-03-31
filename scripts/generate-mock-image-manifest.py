@@ -2,8 +2,7 @@ import shutil
 import os
 import json
 from check_env_vars import _product_version, _image_remote, _image_name, _image_tag
-
-_full_image = "{}/{}:{}".format(_image_remote, _image_remote, _image_tag)
+from check_sha_env_var import _image_sha
 
 _image_keys = ["multicloud_manager", "work", "registration", "multiclusterhub_repo", "hub_mock_component_image"]
 
@@ -21,7 +20,7 @@ with open(_new_image_man_destination, 'a') as f:
         _entry = {
             "image-name": _image_name,
             "image-remote": _image_remote,
-            "image-tag": _image_tag,
+            "image-digest": "sha256:{}".format(_image_sha),
             "image-key": _ik
         }
         _manifest_python.append(_entry)
@@ -29,3 +28,5 @@ with open(_new_image_man_destination, 'a') as f:
 
 with open(_new_image_man_destination, "w") as f:
     f.write(_manifest_json)
+
+print (_manifest_json)
