@@ -1,7 +1,14 @@
-GOOS=linux go build ./templates/hello-world.go
-cp hello-world ./bin/controller
-# cp hello-world ./bin/webhook
-rm hello-world
-GOOS=linux go build ./templates/mutating-webhook.go
-mv mutating-webhook ./bin/webhook
-cp ./templates/template-proxyserver-binary ./bin/proxyserver
+if [ -d "./bin" ]; then
+    rm -rf ./bin
+fi
+
+mkdir ./bin
+
+GOOS=linux go build ./templates/foundation-controller.go
+mv foundation-controller ./bin/controller
+
+GOOS=linux go build ./templates/foundation-webhook.go
+mv foundation-webhook ./bin/webhook
+
+GOOS=linux go build ./templates/foundation-proxyserver.go
+mv foundation-proxyserver ./bin/proxyserver
