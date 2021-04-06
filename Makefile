@@ -33,14 +33,14 @@ del-mock-image-manifests:
 del-mock-bins:
 	rm -rf bin
 
-clean-up: 
+cleanup: 
 	make del-mock-chart-repo 
 	make del-mock-image-manifests 
 	make del-mock-bins
 
 build: 
 	make check-env-vars
-	make clean-up 
+	make cleanup 
 	make gen-mock-charts 
 	make gen-helm-repo-index 
 	make gen-foundation-binaries
